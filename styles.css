@@ -1,0 +1,472 @@
+/* FOUNDATION */
+body {
+	/* FLEX BOX PROPERTIES */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	/* BOX MODEL PROPERTIES */
+	margin: 0;
+	padding: 0;
+	min-height: 130vh;
+
+	/*Specify font family*/
+	font-family: 'Monaco', monospace;
+}
+
+body>* {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* INDEX.HTML */
+
+/* NAVIGATION SECTION */
+
+nav {
+	color: black;
+	background-color: #EAE7DC;
+	height: 80px;
+	width: 100%;
+	font-size: 23px;
+	
+	/*Stretch the distance between elements to fill the width*/
+	max-width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+nav a {
+	/*Customize <a> tag style*/
+	text-decoration: none;
+	color: black;
+	margin: 12px;
+}
+
+nav>a:hover {
+	color: white;
+}
+
+/* HEADER SECTION */
+
+header {
+	color: black;
+	background-color: #D8C3A5;
+	height: 400px;
+	width: 100%;
+}
+
+header {
+	background-color: #D8C3A5;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+header h1 {
+	font-size: 64px;
+	margin: 0;
+	margin-left: 270px;
+	margin-right: 100px;
+}
+
+header h2 {
+	font-size: 41px;
+	margin: 0;
+	margin-left: 270px;
+	margin-right: 100px;
+	color: #F7F5FB;
+	text-transform: uppercase;
+}
+
+header h3 {
+	font-size: 24px;
+	margin: 0;
+	margin-left: 270px;
+	margin-right: 100px;
+	color: black;
+}
+
+header img {
+	width: 350px;
+	height: 350px;
+	background-color: black;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button0 {
+	width: 10%;
+	background-color: #986C6A;
+	color: white;
+
+	padding: 20px 24px;
+	font-size: 22px;
+	border-radius: 12px;
+	border: 2px solid white;
+
+	text-align: center;
+	display: inline-block;
+}
+
+/* ABOUT SECTION */
+
+#about {
+	color: white;
+	background-color: black;
+	min-height: 400px;
+	width: 100%;
+	font-size: 35px;
+	
+	/* Center the content vertically and horizontally */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#about>div {
+	max-width: 640px;
+	
+	/* padding: top right bottom left */
+	padding: 16px 40px 16px 40px;
+	text-align: center;
+
+	/* Define the text color in this div box*/
+	color: #FED0BB;
+}
+
+/* TOPICS SECTION */
+
+#topics {
+	color: white;
+	background-color: #F2CC8F;
+	min-height: 400px;
+	width: 100%;
+	font-size: 35px;
+	
+	/* Center the content vertically and horizontally */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#topics>div {
+	max-width: 640px;
+	/* padding: top right bottom left */
+	padding: 16px 40px 16px 40px;
+	text-align: center;
+
+	/* Define the text color in this div box*/
+	color: black;
+}
+
+.button1 {
+	width: 100%;
+	background-color: #534B52;
+	color: white;
+
+	padding: 22px 26px;
+	font-size: 22px;
+	border-radius: 12px;
+	border: 2px solid #000080;
+
+	text-align: center;
+	display: inline-block;
+}
+
+.button2 {
+	width: 100%;
+	background-color: #474448;
+	color: white;
+
+	padding: 22px 26px;
+	font-size: 22px;
+	border-radius: 12px;
+	border: 2px solid #000080;
+
+	text-align: center;
+	display: inline-block;
+}
+
+.button3 {
+	width: 100%;
+	background-color: #454545;
+	color: white;
+
+	padding: 22px 26px;
+	font-size: 22px;
+	border-radius: 12px;
+	border: 2px solid #000080;
+
+	text-align: center;
+	display: inline-block;
+}
+
+/* GET HELP SECTION */
+
+#help {
+	color: black;
+	background-color: #f6efa6;
+	min-height: 400px;
+	padding: 20px 0;
+	width: 100%;
+	flex-direction: column;
+	font-size: 35px;
+}
+
+#help h2 {
+	color: #373737;
+	text-transform: uppercase;
+
+}
+
+#help form {
+	max-width: 640px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#help form>* {
+	font-family: 'Monaco', monospace;
+}
+
+#help input {
+	width: 100%;
+	font-size: 16px;
+	padding: 8px;
+	border: none;
+	margin-bottom: 16px;
+}
+
+#help textarea {
+	width: 100%;
+	font-size: 16px;
+	padding: 8px;
+	border: none;
+	margin-bottom: 16px;
+	height: 120px;
+	resize: none;
+}
+
+#help button {
+	width: 50%;
+	background-color: #F45B69;
+	color: white;
+	text-align: center;
+
+	padding: 8px 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+	color: black;
+	background-color: #F4EBBE;
+	height: 120px;
+	width: 100%;
+	font-size: 16px;
+	max-width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+}
+
+/* OTHER.HTML */
+
+/* TABLE SECTION */
+
+table, th, td {
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: top;
+	padding: 10px;
+
+}
+
+.depression-zoom {
+	transition: transform 0.2s;
+}
+
+.depression-zoom:hover {
+	transform: scale(1.4);
+}
+
+.anxiety-zoom {
+	transition: transform 0.2s;
+}
+
+.anxiety-zoom:hover {
+	transform: scale(1.4);
+}
+
+.substance-zoom {
+	transition: transform 0.2s;
+}
+
+.substance-zoom:hover {
+	transform: scale(1.4);
+}
+
+/* DEPRESSION SECTION */
+/* LIME GREEN REPRESENTS DEPRESSION AWARNESS*/
+
+#depression {
+	color: white;
+	background-color: #D1F0B1;
+	padding: 20px 0;
+	width: 100%;
+	flex-direction: column;
+	min-height: 600px;
+}
+
+#depression {
+	color: black;
+	text-transform: uppercase;
+}
+
+/* ANXIETY SECTION */
+/* TEAL REPRESENTS AXIETY AWARNEESS*/
+
+#anxiety {
+	color: white;
+	background-color: #BBD1EA;
+	padding: 20px 0;
+	width: 100%;
+	flex-direction: column;
+	min-height: 600px;
+}
+
+#anxiety {
+	color: black;
+	text-transform: uppercase;
+}
+
+/* SUBSTANCE ABUSE SECTION */
+/* RED REPRESENTS SUBSTANCE ABUSE AWARNESS*/
+
+#substance {
+	color: white;
+	background-color: #F1AB86;
+	padding: 20px 0;
+	width: 100%;
+	flex-direction: column;
+	min-height: 600px;
+}
+
+#substance {
+	color: black;
+	text-transform: uppercase;
+}
+
+/* FOOTER */
+
+#footer1 {
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #E6E8E6;
+}
+
+.button4 {
+	width: 20%;
+	background-image: linear-gradient(#F9C58D, #F7AFBA, #F492F0);
+	color: black;
+
+	padding: 18px 22px;
+	font-size: 20px;
+	border-radius: 15px;
+
+	border-radius: 12px;
+	border: 2px solid black;
+
+	text-align: center;
+	display: inline-block;
+
+}
+
+.button4:hover {
+	background-image: linear-gradient(#FFA585, #FFCA93, #FFEDA0);
+}
+
+.button5 {
+	width: 20%;
+	background-image: linear-gradient(#F492F0, #F7AFBA, #FFA585);
+	color: black;
+
+	padding: 18px 22px;
+	font-size: 20px;
+	border-radius: 15px;
+
+	border-radius: 12px;
+	border: 2px solid black;
+
+	text-align: center;
+	display: inline-block;
+}
+
+.button5:hover {
+	background-image: linear-gradient(#FFEDA0, #FFCA93, #FFA585);
+}
+
+/* THANKS.HTML */
+
+/* THANKS SECTION */
+
+#thanks {
+	color: white;
+	background-color: #E895D0;
+	min-height: 200px;
+	
+	width: 100%;
+	font-size: 35px;
+	
+	/* Center the content vertically and horizontally */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+/* FOOTER */
+
+#footer2 {
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.button6 {
+	width: 100%;
+	background-image: linear-gradient(#FF1B6B, #A86DB1, #45CAFF);
+	color: black;
+	padding: 22px 26px;
+	font-size: 20px;
+	border-radius: 15px;
+
+	border-radius: 12px;
+	border: 2px solid black;
+	
+	text-align: center;
+	display: inline-block;
+}
+
+.button6:hover {
+	background-image: linear-gradient(#57EBDE, #AEFB2A, #AEFB2A);
+}
